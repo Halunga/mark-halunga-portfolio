@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  color-scheme: light;
+  color-scheme: dark;
   --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
   --font-serif: "Cormorant Garamond", Georgia, serif;
   --site-nav-height: 44px;
@@ -22,8 +22,8 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background: #f6f3ed;
-  color: #1d1d1f;
+  background: #171717;
+  color: #ffffff;
   font-family: var(--font-sans);
   font-size: 17px;
   font-synthesis: none;
@@ -50,26 +50,17 @@ a {
 }
 
 ::selection {
-  background: #9f4f38;
-  color: #f6f3ed;
+  background: #df252b;
+  color: #ffffff;
 }
 
 :focus-visible {
-  outline: 2px solid #9f4f38;
+  outline: 2px solid #df252b;
   outline-offset: 4px;
 }
 
 .noise {
-  pointer-events: none;
-  position: fixed;
-  inset: 0;
-  z-index: 60;
-  opacity: 0.08;
-  background-image:
-    linear-gradient(90deg, rgba(29, 29, 31, 0.12) 1px, transparent 1px),
-    linear-gradient(rgba(29, 29, 31, 0.08) 1px, transparent 1px);
-  background-size: 220px 220px;
-  mix-blend-mode: soft-light;
+  display: none;
 }
 
 .cover-title {
@@ -143,20 +134,20 @@ a {
 
 .rule-grid {
   background-image:
-    linear-gradient(rgba(29, 29, 31, 0.08) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(29, 29, 31, 0.08) 1px, transparent 1px);
+    linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
   background-size: 48px 48px;
 }
 
 .prose-mark {
-  color: #424245;
+  color: #d8d8d8;
   font-size: 1rem;
   line-height: 1.8;
 }
 
 .prose-mark h2 {
   margin: 3rem 0 1rem;
-  color: #1d1d1f;
+  color: #ffffff;
   font-family: var(--font-serif);
   font-size: clamp(2rem, 6vw, 4.75rem);
   font-weight: 500;
@@ -165,7 +156,7 @@ a {
 
 .prose-mark h3 {
   margin: 2rem 0 0.6rem;
-  color: #1d1d1f;
+  color: #ffffff;
   font-size: 1.05rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -178,7 +169,244 @@ a {
 }
 
 .prose-mark a {
-  border-bottom: 1px solid #1d1d1f;
+  border-bottom: 1px solid #ffffff;
+}
+
+.karma-card {
+  position: relative;
+  display: block;
+  min-height: 364px;
+  overflow: hidden;
+  border-radius: 16px;
+  padding: 26px 24px;
+  color: #ffffff;
+  transition:
+    transform 240ms ease,
+    filter 240ms ease;
+}
+
+.karma-card:hover {
+  transform: translateY(-5px);
+  filter: saturate(1.08) contrast(1.02);
+}
+
+.karma-card::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 42%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.52), transparent);
+  pointer-events: none;
+}
+
+.karma-arrow {
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+  z-index: 20;
+  display: grid;
+  width: 62px;
+  height: 62px;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.62);
+  border-radius: 999px;
+  font-size: 34px;
+  line-height: 1;
+  transition:
+    background 220ms ease,
+    color 220ms ease,
+    transform 220ms ease;
+}
+
+.karma-card:hover .karma-arrow {
+  background: #ffffff;
+  color: #171717;
+  transform: translateX(4px);
+}
+
+.karma-art {
+  position: absolute;
+  inset: auto 0 0;
+  height: 58%;
+  overflow: hidden;
+  opacity: 0.92;
+}
+
+.karma-art span {
+  position: absolute;
+  display: block;
+}
+
+.karma-art-chip span:nth-child(1) {
+  right: 28px;
+  bottom: 34px;
+  width: 176px;
+  height: 132px;
+  transform: rotate(-22deg);
+  border-radius: 18px;
+  background: linear-gradient(145deg, #e8e4ef, #a9a2c4);
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.34);
+}
+
+.karma-art-chip span:nth-child(2) {
+  right: 78px;
+  bottom: 88px;
+  color: rgba(75, 64, 110, 0.4);
+  font-size: 58px;
+  font-weight: 900;
+}
+
+.karma-art-chip span:nth-child(2)::before {
+  content: "AI";
+}
+
+.karma-art-paper span:nth-child(1),
+.karma-art-paper span:nth-child(2),
+.karma-art-paper span:nth-child(3) {
+  right: 28px;
+  bottom: 30px;
+  width: 72px;
+  height: 168px;
+  transform: rotate(68deg);
+  background: linear-gradient(90deg, #f2f0ec, #9c9a96);
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+.karma-art-paper span:nth-child(2) {
+  right: 100px;
+  bottom: 15px;
+}
+
+.karma-art-paper span:nth-child(3) {
+  right: 170px;
+  bottom: 0;
+}
+
+.karma-art-water span {
+  left: -24px;
+  right: -24px;
+  height: 42px;
+  border: 10px solid rgba(255, 255, 255, 0.72);
+  border-radius: 50%;
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+
+.karma-art-water span:nth-child(1) {
+  bottom: 12px;
+}
+
+.karma-art-water span:nth-child(2) {
+  bottom: 52px;
+}
+
+.karma-art-water span:nth-child(3) {
+  bottom: 92px;
+}
+
+.karma-art-water span:nth-child(4) {
+  right: 26px;
+  bottom: 132px;
+  left: auto;
+  width: 96px;
+  height: 66px;
+  transform: rotate(14deg);
+  border: 0;
+  border-radius: 8px;
+  background: linear-gradient(145deg, #d8d5ce, #8f8d87);
+}
+
+.karma-art-orbit span {
+  border-radius: 999px;
+  background: radial-gradient(circle at 35% 35%, #f4f0e7, #8d7d68 56%, #3b3027);
+}
+
+.karma-art-orbit span:nth-child(1) {
+  right: 64px;
+  bottom: 58px;
+  width: 96px;
+  height: 96px;
+}
+
+.karma-art-orbit span:nth-child(2) {
+  right: 178px;
+  bottom: 22px;
+  width: 58px;
+  height: 58px;
+}
+
+.karma-art-orbit span:nth-child(3) {
+  right: 22px;
+  bottom: 16px;
+  width: 70px;
+  height: 70px;
+}
+
+.karma-art-orbit span:nth-child(4) {
+  right: 58px;
+  bottom: 76px;
+  width: 210px;
+  height: 2px;
+  transform: rotate(24deg);
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.karma-art-block span:nth-child(1) {
+  right: -14px;
+  bottom: -16px;
+  width: 238px;
+  height: 168px;
+  transform: rotate(-20deg);
+  background:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.2) 1px, transparent 1px),
+    linear-gradient(#dbd8d1, #9e9b94);
+  background-size: 40px 40px, auto;
+  clip-path: polygon(0 32%, 52% 0, 100% 28%, 100% 100%, 0 100%);
+}
+
+.karma-art-spiral span {
+  right: -70px;
+  bottom: -54px;
+  width: 360px;
+  height: 210px;
+  border: 18px solid rgba(255, 255, 255, 0.74);
+  border-radius: 50%;
+  border-left-color: transparent;
+}
+
+.karma-art-spiral span:nth-child(2) {
+  right: -18px;
+  bottom: -10px;
+  width: 252px;
+  height: 150px;
+}
+
+.karma-art-lens span:nth-child(1),
+.karma-art-sphere span:nth-child(1) {
+  right: 42px;
+  bottom: 42px;
+  width: 164px;
+  height: 164px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #ffffff, #aaa 46%, #272727 78%);
+}
+
+.karma-art-grid span:nth-child(1) {
+  right: 20px;
+  bottom: 22px;
+  width: 240px;
+  height: 170px;
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.5) 1px, transparent 1px),
+    linear-gradient(rgba(255, 255, 255, 0.5) 1px, transparent 1px);
+  background-size: 26px 26px;
+  transform: perspective(420px) rotateX(58deg) rotateZ(-14deg);
+}
+
+@media (max-width: 767px) {
+  .karma-card {
+    min-height: 310px;
+  }
 }
 
 .prose-mark ul {
