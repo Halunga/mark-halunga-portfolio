@@ -1,21 +1,20 @@
 import type { MetadataRoute } from "next";
+import { siteSettings } from "@/data/site";
 import { blogSlugs, projectSlugs } from "@/lib/content";
-
-const siteUrl = "https://halunga.github.io/mark-halunga-portfolio";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = ["", "/projects", "/blog", "/about", "/contact"].map((route) => ({
-    url: `${siteUrl}${route}`,
+    url: `${siteSettings.url}${route}`,
     lastModified: new Date()
   }));
 
   const projectRoutes = projectSlugs.map((slug) => ({
-    url: `${siteUrl}/projects/${slug}`,
+    url: `${siteSettings.url}/projects/${slug}`,
     lastModified: new Date()
   }));
 
   const blogRoutes = blogSlugs.map((slug) => ({
-    url: `${siteUrl}/blog/${slug}`,
+    url: `${siteSettings.url}/blog/${slug}`,
     lastModified: new Date()
   }));
 

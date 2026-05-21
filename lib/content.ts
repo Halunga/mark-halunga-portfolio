@@ -3,21 +3,28 @@ import type { ComponentType } from "react";
 export type ProjectMeta = {
   slug: string;
   title: string;
-  summary: string;
+  category: string;
   year: string;
-  discipline: string;
-  image: string;
+  shortDescription: string;
+  thumbnail: string;
+  heroImage: string;
   tags: string[];
   featured?: boolean;
-  client?: string;
   role?: string;
+  overview: string;
+  challenge: string;
+  process: string;
+  result: string;
+  gallery: string[];
 };
 
 export type PostMeta = {
   slug: string;
   title: string;
-  summary: string;
+  excerpt: string;
   date: string;
+  category: string;
+  readingTime: string;
   href: string;
 };
 
@@ -34,7 +41,8 @@ type BlogModule = {
 const projectImports = {
   "nordic-archive": () => import("@/content/projects/nordic-archive.mdx"),
   "silent-commerce": () => import("@/content/projects/silent-commerce.mdx"),
-  "field-notes": () => import("@/content/projects/field-notes.mdx")
+  "field-notes": () => import("@/content/projects/field-notes.mdx"),
+  "water-lines": () => import("@/content/projects/water-lines.mdx")
 } satisfies Record<string, () => Promise<ProjectModule>>;
 
 const blogImports = {
@@ -45,7 +53,7 @@ const blogImports = {
 export const projectSlugs = Object.keys(projectImports);
 export const blogSlugs = Object.keys(blogImports);
 
-export async function getProjects() {
+export async function getProjects(): Promise<ProjectMeta[]> {
   const projects = await Promise.all(
     Object.entries(projectImports).map(async ([slug, load]) => {
       const mod = await load();
@@ -56,7 +64,9 @@ export async function getProjects() {
   return projects.sort((a, b) => Number(b.year) - Number(a.year));
 }
 
-export async function getProject(slug: string) {
+export async function getProject(
+  slug: string
+): Promise<{ meta: ProjectMeta; Content: ComponentType } | null> {
   const load = projectImports[slug as keyof typeof projectImports];
   if (!load) return null;
 
@@ -67,7 +77,7 @@ export async function getProject(slug: string) {
   };
 }
 
-export async function getPosts() {
+export async function getPosts(): Promise<PostMeta[]> {
   const posts = await Promise.all(
     Object.entries(blogImports).map(async ([slug, load]) => {
       const mod = await load();
@@ -78,7 +88,9 @@ export async function getPosts() {
   return posts.sort((a, b) => Date.parse(b.date) - Date.parse(a.date));
 }
 
-export async function getPost(slug: string) {
+export async function getPost(
+  slug: string
+): Promise<{ meta: PostMeta; Content: ComponentType } | null> {
   const load = blogImports[slug as keyof typeof blogImports];
   if (!load) return null;
 

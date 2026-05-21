@@ -12,17 +12,18 @@ export default function ContactPage() {
     <>
       <PageIntro
         eyebrow="Contact"
-        title="Send the project shape."
-        description="Tell me what exists, what is broken, what needs to launch, and what good would look like."
+        title="Send the project shape, the images, or the unresolved idea."
+        description="For selected collaborations in design, AI media, editorial platforms, architecture visualization, water storytelling, and creative systems."
       />
       <section className="mx-auto grid max-w-grid gap-8 px-4 sm:px-6 md:grid-cols-12 lg:px-8">
         <div className="md:col-span-3">
-          <p className="text-xs font-black uppercase text-rust">Channels</p>
+          <p className="text-xs font-black uppercase tracking-[0.2em] text-rust">Channels</p>
         </div>
         <div className="grid gap-4 md:col-span-7">
           <p className="mb-4 max-w-2xl leading-7 text-steel">
-            Useful first notes include the current URL, what kind of site you need, your deadline,
-            and whether the work is design, development, redesign, or all three.
+            Useful first notes include what you are making, what already exists, the images or
+            references that matter, your deadline, and whether the work needs direction, design,
+            development, writing structure, or all of it together.
           </p>
           <Link
             href="mailto:hello@markhalunga.com"

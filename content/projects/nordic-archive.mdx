@@ -1,24 +1,31 @@
 export const metadata = {
-  title: "Portfolio System",
-  summary:
-    "A fast portfolio architecture for case studies, image-led project grids, and clear contact paths.",
+  title: "Nordic Archive",
+  category: "Creative systems",
   year: "2026",
-  discipline: "Portfolio build",
-  image: "/images/project-nordic-archive.svg",
-  tags: ["Next.js", "MDX", "SEO"],
+  shortDescription:
+    "A quiet digital archive for essays, visual research, AI studies, and philosophical notes arranged as a living editorial system.",
+  thumbnail: "/images/project-nordic-archive.svg",
+  heroImage: "/images/project-nordic-archive.svg",
+  tags: ["Design system", "MDX", "Editorial"],
   featured: true,
-  client: "Independent creative",
-  role: "Information architecture, front-end build, content system"
+  role: "Creative direction, interface design, front-end build",
+  overview:
+    "Nordic Archive is a personal knowledge surface for work that sits between media, philosophy, and digital craft. The system treats writing and imagery as equal citizens.",
+  challenge:
+    "The material needed to feel contemplative without becoming vague: enough structure for long-term publishing, enough space for atmosphere, and enough contrast to make each entry feel intentional.",
+  process:
+    "The architecture was reduced to a strict grid, reusable MDX content, image-first entries, and restrained typography. Every page was designed to make replacement simple without flattening the mood.",
+  result:
+    "A calm editorial platform that can hold essays, visual experiments, field notes, and case studies while still feeling like one coherent body of work.",
+  gallery: ["/images/project-nordic-archive.svg", "/images/project-field-notes.svg", "/images/project-silent-commerce.svg"]
 };
 
-## Brief
+## Editorial System
 
-A portfolio has one job: make the work easy to understand quickly. This build is structured for a creative professional who needs selected projects, a writing index, an about page, and a direct contact path without burying visitors in decoration.
+The archive is built around a simple belief: a personal platform should make ideas easier to revisit. It should not behave like a feed. It should give images room to breathe, let essays accumulate slowly, and make the underlying structure visible without turning the site into a diagram.
 
-## Approach
+The design language is dark, spare, and deliberate. Large type carries the voice. Thin rules carry the grid. The content files carry the future.
 
-The site uses Next.js, TypeScript, Tailwind, and MDX. Projects are stored as editable content files with metadata for cards, pages, SEO, and navigation. The layout stays strict: large type, direct hierarchy, fast pages, and mobile navigation that does not get in the way.
+## Replaceable Content
 
-## Outcome
-
-The result is a portfolio foundation that can grow without redesigning every page. New projects can be added by creating an MDX file, updating one import map, and replacing the image assets in `public/images`.
+Projects and posts are stored as MDX entries with metadata at the top. That makes the site easy to expand: add a file, update the import map, and the homepage, index pages, and SEO surfaces can all read from the same source.

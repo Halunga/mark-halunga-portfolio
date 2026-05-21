@@ -11,34 +11,36 @@ export default function AboutPage() {
     <>
       <PageIntro
         eyebrow="About"
-        title="Frontend with taste and discipline."
-        description="Mark Halunga builds fast, refined websites and content systems with a focus on structure, atmosphere, accessibility, and maintainable implementation."
+        title="A visual practice for systems, images, and serious digital presence."
+        description="Mark Halunga works across front-end development, visual design, illustration, AI media, architecture visualization, water storytelling, and philosophical editorial systems."
       />
       <section className="mx-auto grid max-w-grid gap-8 px-4 sm:px-6 md:grid-cols-12 lg:px-8">
         <div className="md:col-span-3">
-          <p className="text-xs font-black uppercase text-rust">Profile</p>
+          <p className="text-xs font-black uppercase tracking-[0.2em] text-rust">Profile</p>
         </div>
         <div className="prose-mark md:col-span-7">
           <p>
-            Mark Halunga works across front-end development, interface design, and digital
-            publishing. The focus is practical: build sites that load quickly, navigate clearly, and
-            make the content feel considered rather than generic.
+            Mark Halunga builds digital work for projects that need atmosphere and structure at the
+            same time: portfolios, editorial systems, AI-assisted visual worlds, architecture
+            studies, illustration-led concepts, and public-interest water projects.
           </p>
           <p>
-            I work best on projects where the content matters: portfolios, small-business sites,
-            editorial pages, landing pages, and redesigns that need sharper structure. I care about
-            the parts users notice immediately and the parts that make the site easier to maintain
-            six months later.
+            The work is guided by a simple preference: make the image strong, make the system quiet,
+            and make the path through the page unmistakable. A site should feel designed without
+            feeling decorated.
           </p>
           <p>
-            The stack is deliberately modern and simple: Next.js, React, TypeScript, Tailwind, MDX,
-            semantic HTML, responsive navigation, SEO metadata, and accessible interaction states.
+            The stack is deliberately modern and maintainable: Next.js, TypeScript, Tailwind CSS,
+            MDX, semantic HTML, accessible navigation, SEO metadata, and reusable components that
+            keep content replacement straightforward.
           </p>
           <h2>Capabilities</h2>
           <ul>
-            <li>Next.js, TypeScript, Tailwind, and component-driven front ends</li>
-            <li>Responsive navigation, accessibility, SEO, and performance-minded builds</li>
-            <li>Portfolio architecture, MDX content systems, and editorial interfaces</li>
+            <li>Portfolio architecture, editorial web design, and long-form case-study systems</li>
+            <li>AI media direction, prompt systems, image research, and campaign prototypes</li>
+            <li>Architecture visualization surfaces, spatial narratives, and image sequencing</li>
+            <li>Water project storytelling, public documentation, and field-note archives</li>
+            <li>Next.js, TypeScript, Tailwind CSS, MDX, accessibility, SEO, and performance</li>
           </ul>
         </div>
       </section>

@@ -1,20 +1,22 @@
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
+import { Footer } from "@/components/Footer";
+import { Header } from "@/components/Header";
+import { siteSettings } from "@/data/site";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://halunga.github.io/polish-phrasebook"),
+  metadataBase: new URL(siteSettings.url),
   title: {
-    default: "Polish Phrasebook",
-    template: "%s | Polish Phrasebook"
+    default: `${siteSettings.name} | Design, AI Media, Creative Systems`,
+    template: `%s | ${siteSettings.name}`
   },
-  description:
-    "A focused Polish phrasebook app with common phrases, pronunciation hints, and browser audio playback.",
+  description: siteSettings.description,
   openGraph: {
-    title: "Polish Phrasebook",
-    description: "Listen to common Polish phrases for everyday conversation.",
-    url: "https://halunga.github.io/polish-phrasebook",
-    siteName: "Polish Phrasebook",
+    title: siteSettings.name,
+    description: siteSettings.description,
+    url: siteSettings.url,
+    siteName: siteSettings.name,
     images: [{ url: "/images/og-mark-halunga.svg", width: 1200, height: 630 }],
     locale: "en_US",
     type: "website"
@@ -28,7 +30,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#f6f3ed"
+  themeColor: "#070707"
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
@@ -41,7 +43,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         >
           Skip to content
         </a>
+        <Header />
         <main id="content">{children}</main>
+        <Footer />
         <div className="noise" aria-hidden="true" />
       </body>
     </html>

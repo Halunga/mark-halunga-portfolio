@@ -1,0 +1,20 @@
+<svg width="1600" height="1200" viewBox="0 0 1600 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1200" fill="#071010"/>
+  <rect x="96" y="96" width="1410" height="1008" fill="#0d1716" stroke="#31413d"/>
+  <path d="M0 782C171 714 275 884 430 816C585 748 658 542 842 606C1026 670 1093 842 1268 760C1443 678 1501 478 1600 534" stroke="#8aa79e" stroke-width="5"/>
+  <path d="M0 866C190 805 286 970 474 902C662 834 716 704 886 724C1056 744 1128 936 1298 878C1468 820 1518 650 1600 684" stroke="#f5f1e8" stroke-opacity=".42" stroke-width="2"/>
+  <path d="M0 676C164 604 306 712 454 668C602 624 654 474 804 468C954 462 1038 606 1198 592C1358 578 1464 430 1600 408" stroke="#b95f42" stroke-opacity=".72" stroke-width="3"/>
+  <g opacity=".55">
+    <line x1="96" y1="220" x2="1506" y2="220" stroke="#f5f1e8" stroke-opacity=".12"/>
+    <line x1="96" y1="420" x2="1506" y2="420" stroke="#f5f1e8" stroke-opacity=".12"/>
+    <line x1="96" y1="620" x2="1506" y2="620" stroke="#f5f1e8" stroke-opacity=".12"/>
+    <line x1="96" y1="820" x2="1506" y2="820" stroke="#f5f1e8" stroke-opacity=".12"/>
+    <line x1="320" y1="96" x2="320" y2="1104" stroke="#f5f1e8" stroke-opacity=".1"/>
+    <line x1="640" y1="96" x2="640" y2="1104" stroke="#f5f1e8" stroke-opacity=".1"/>
+    <line x1="960" y1="96" x2="960" y2="1104" stroke="#f5f1e8" stroke-opacity=".1"/>
+    <line x1="1280" y1="96" x2="1280" y2="1104" stroke="#f5f1e8" stroke-opacity=".1"/>
+  </g>
+  <circle cx="430" cy="816" r="12" fill="#f5f1e8"/>
+  <circle cx="842" cy="606" r="12" fill="#b95f42"/>
+  <circle cx="1268" cy="760" r="12" fill="#8aa79e"/>
+</svg>

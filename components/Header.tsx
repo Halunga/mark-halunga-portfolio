@@ -3,28 +3,21 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-
-const nav = [
-  { href: "/", label: "Home" },
-  { href: "/#services", label: "Services" },
-  { href: "/projects", label: "Work" },
-  { href: "/about", label: "About" },
-  { href: "/contact", label: "Contact" }
-];
+import { navigation } from "@/data/navigation";
 
 export function Header() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 bg-white/80 text-[#1d1d1f] backdrop-blur-xl">
+    <header className="sticky top-0 z-40 border-b border-white/10 bg-coal/80 text-ink backdrop-blur-xl">
       <nav
-        className="mx-auto grid max-w-5xl grid-cols-[auto_1fr_auto] items-center gap-4 px-5 py-0"
+        className="mx-auto grid h-[var(--site-nav-height)] max-w-grid grid-cols-[auto_1fr_auto] items-center gap-4 px-4 sm:px-6 lg:px-8"
         aria-label="Main navigation"
       >
         <Link
           href="/"
-          className="grid h-11 w-10 place-items-center text-[13px] font-semibold tracking-normal"
+          className="grid h-full w-11 place-items-center text-[13px] font-semibold tracking-normal"
           aria-label="Mark Halunga home"
           onClick={() => setOpen(false)}
         >
@@ -33,25 +26,23 @@ export function Header() {
 
         <button
           type="button"
-          className="inline-flex h-11 items-center justify-self-end text-xs font-medium md:hidden"
+          className="inline-flex h-full items-center justify-self-end text-xs font-medium uppercase tracking-[0.2em] md:hidden"
           aria-expanded={open}
           aria-controls="mobile-menu"
           onClick={() => setOpen((value) => !value)}
         >
-          Menu
+          {open ? "Close" : "Menu"}
         </button>
 
         <div className="hidden items-center justify-center gap-8 md:flex">
-          {nav.map((item) => {
-            const active =
-              !item.href.includes("#") &&
-              (pathname === item.href || pathname.startsWith(`${item.href}/`));
+          {navigation.map((item) => {
+            const active = pathname === item.href || pathname.startsWith(`${item.href}/`);
             return (
               <Link
                 key={item.href}
                 href={item.href}
-                className={`py-4 text-xs font-normal tracking-normal transition ${
-                  active ? "text-black" : "text-black/70 hover:text-black"
+                className={`py-3 text-xs font-medium uppercase tracking-[0.16em] transition ${
+                  active ? "text-ink" : "text-steel hover:text-ink"
                 }`}
               >
                 {item.label}
@@ -60,20 +51,20 @@ export function Header() {
           })}
         </div>
 
-        <Link href="/contact" className="hidden text-xs text-[#0066cc] hover:underline md:block">
-          Start project
+        <Link href="/contact" className="hidden text-xs font-medium uppercase tracking-[0.16em] text-rust hover:text-ink md:block">
+          Start
         </Link>
       </nav>
 
       <div
         id="mobile-menu"
-        className={`${open ? "grid" : "hidden"} border-t border-black/10 bg-white md:hidden`}
+        className={`${open ? "grid" : "hidden"} border-t border-white/10 bg-coal md:hidden`}
       >
-        {nav.map((item) => (
+        {navigation.map((item) => (
           <Link
             key={item.href}
             href={item.href}
-            className="border-b border-black/10 px-5 py-5 text-2xl font-semibold"
+            className="border-b border-white/10 px-5 py-5 font-serif text-4xl font-medium"
             onClick={() => setOpen(false)}
           >
             {item.label}

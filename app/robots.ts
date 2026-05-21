@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { siteSettings } from "@/data/site";
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -6,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/"
     },
-    sitemap: "https://halunga.github.io/mark-halunga-portfolio/sitemap.xml"
+    sitemap: `${siteSettings.url}/sitemap.xml`
   };
 }
