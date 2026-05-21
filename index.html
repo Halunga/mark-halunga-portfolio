@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vegan Cheese Recipe Finder</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="hero" aria-labelledby="pageTitle">
+        <label class="language-switcher">
+          <span data-i18n="languageLabel">Language</span>
+          <select id="languageSelect" aria-label="Language">
+            <option value="en">English</option>
+            <option value="sv">Svenska</option>
+            <option value="de">Deutsch</option>
+            <option value="fr">Français</option>
+            <option value="es">Español</option>
+          </select>
+        </label>
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="heroEyebrow">Verified vegan cheese recipes</p>
+          <h1 id="pageTitle" data-i18n="heroTitle">Find the best dairy-free cheese recipes in one place.</h1>
+          <p data-i18n="heroText">
+            Browse highly rated sauces plus firm, sliceable, grateable, and aged vegan cheeses from trusted recipe sites.
+          </p>
+        </div>
+        <div class="hero-media" aria-hidden="true">
+          <img
+            src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=80"
+            alt=""
+          />
+        </div>
+      </section>
+
+      <section class="toolbar" aria-label="Recipe controls" data-i18n-aria="controlsLabel">
+        <label class="search">
+          <span data-i18n="searchLabel">Search</span>
+          <input id="searchInput" type="search" placeholder="cashew, nacho, nut-free..." />
+        </label>
+
+        <label>
+          <span data-i18n="styleLabel">Style</span>
+          <select id="styleFilter">
+            <option value="all" data-i18n="allStyles">All styles</option>
+          </select>
+        </label>
+
+        <label>
+          <span data-i18n="dietLabel">Diet</span>
+          <select id="dietFilter">
+            <option value="all" data-i18n="allDiets">All diets</option>
+            <option value="nut-free" data-i18n="nutFree">Nut-free</option>
+            <option value="gluten-free" data-i18n="glutenFree">Gluten-free</option>
+            <option value="soy-free" data-i18n="soyFree">Soy-free</option>
+          </select>
+        </label>
+
+        <label>
+          <span data-i18n="formatLabel">Format</span>
+          <select id="formatFilter">
+            <option value="all" data-i18n="allFormats">All formats</option>
+            <option value="hard" data-i18n="hardSliceable">Hard / sliceable</option>
+            <option value="quick" data-i18n="quickSauces">Quick sauces</option>
+          </select>
+        </label>
+
+        <label>
+          <span data-i18n="measuresLabel">Measures</span>
+          <select id="unitSelect">
+            <option value="metric" data-i18n="metric">Metric</option>
+            <option value="british" data-i18n="british">British / Imperial</option>
+          </select>
+        </label>
+
+        <label>
+          <span data-i18n="sortLabel">Sort</span>
+          <select id="sortSelect">
+            <option value="confidence" data-i18n="bestVerified">Best verified</option>
+            <option value="rating" data-i18n="highestRating">Highest rating</option>
+            <option value="reviews" data-i18n="mostReviewed">Most reviewed</option>
+            <option value="time" data-i18n="fastest">Fastest</option>
+          </select>
+        </label>
+      </section>
+
+      <section class="stats" aria-label="Recipe summary" data-i18n-aria="summaryLabel">
+        <div>
+          <strong id="recipeCount">0</strong>
+          <span data-i18n="recipesStat">recipes</span>
+        </div>
+        <div>
+          <strong id="averageRating">0.0</strong>
+          <span data-i18n="averageRatingStat">average rating</span>
+        </div>
+        <div>
+          <strong id="sourceCount">0</strong>
+          <span data-i18n="sourcesStat">trusted sources</span>
+        </div>
+      </section>
+
+      <section class="content">
+        <aside class="guide" aria-label="Verification guide" data-i18n-aria="verificationGuide">
+          <h2 data-i18n="verificationTitle">Verification</h2>
+          <p data-i18n="verificationText">
+            Detailed hard-style recipes are adapted from public source pages and shown with metric plus British/Imperial measurements.
+          </p>
+          <div class="checklist">
+            <span data-i18n="checkPublic">Public recipe page</span>
+            <span data-i18n="checkRating">Rating or vote count shown</span>
+            <span data-i18n="checkVegan">Vegan ingredients confirmed</span>
+            <span data-i18n="checkLink">Direct source link included</span>
+            <span data-i18n="checkMeasures">Measurements converted for home kitchens</span>
+          </div>
+        </aside>
+
+        <section>
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow" data-i18n="libraryEyebrow">Recipe library</p>
+              <h2 data-i18n="libraryTitle">Highest-rated picks</h2>
+            </div>
+            <button id="resetBtn" type="button" data-i18n="reset">Reset</button>
+          </div>
+          <div id="recipeGrid" class="recipe-grid" aria-live="polite"></div>
+        </section>
+      </section>
+    </main>
+
+    <script defer src="./app.js"></script>
+  </body>
+</html>

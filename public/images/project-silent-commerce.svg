@@ -1,0 +1,9 @@
+<svg width="1600" height="1200" viewBox="0 0 1600 1200" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Abstract editorial commerce composition">
+  <rect width="1600" height="1200" fill="#070707"/>
+  <rect x="120" y="120" width="1360" height="960" fill="#181818" stroke="#f4efe6" stroke-width="2"/>
+  <rect x="240" y="210" width="360" height="780" fill="#f4efe6"/>
+  <rect x="660" y="210" width="700" height="270" fill="#2c312b"/>
+  <rect x="660" y="540" width="700" height="450" fill="#9f4934"/>
+  <circle cx="420" cy="600" r="124" fill="#070707"/>
+  <path d="M760 660H1260M760 732H1180M760 804H1320" stroke="#f4efe6" stroke-width="14"/>
+</svg>
