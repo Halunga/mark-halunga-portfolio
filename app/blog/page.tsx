@@ -4,8 +4,8 @@ import { PostList } from "@/components/PostList";
 import { getPosts } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: "Notes",
-  description: "Writing and notes from Carbon 12."
+  title: "Ideas",
+  description: "Writing, observations, reflections, and process notes from Carbon 12."
 };
 
 export default async function BlogPage() {
@@ -14,9 +14,9 @@ export default async function BlogPage() {
   return (
     <>
       <PageIntro
-        eyebrow="Notes"
-        title="Writing, tests, and things worth keeping."
-        description="Short pieces on design, image making, AI tools, philosophy, architecture, water projects, and the machinery behind finished work."
+        eyebrow="Ideas"
+        title="Notes, ideas, and observations."
+        description="Writing, reflections, process notes, visual references, and thoughts around design, image making, architecture, water projects, and finished work."
       />
       <PostList posts={posts} />
     </>

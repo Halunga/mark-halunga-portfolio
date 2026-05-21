@@ -3,7 +3,7 @@ export const homeCopy = {
     eyebrow: "Current focus",
     title: "Carbon 12",
     intro:
-      "Design, image making, writing, AI tools, systems, and visual ideas. A small platform for work, notes, tests, and practical concepts."
+      "Design, image making, writing, systems, and visual ideas. A small platform for work, notes, studies, and practical concepts."
   },
   about:
     "I work where images, interfaces, research, and plain language need to sit in the same room without making a fuss.",

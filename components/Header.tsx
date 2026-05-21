@@ -6,25 +6,26 @@ import { useState } from "react";
 
 const groups = [
   {
-    label: "Work",
+    label: "Portfolio",
     links: [
-      { href: "/projects", label: "Projects" },
+      { href: "/projects", label: "Portfolio" },
       { href: "/projects/water-lines", label: "Water Lines" },
       { href: "/projects/nordic-archive", label: "Nordic Archive" }
     ]
   },
   {
-    label: "Notes",
+    label: "Ideas",
     links: [
-      { href: "/blog", label: "Writing" },
+      { href: "/blog", label: "Ideas" },
       { href: "/blog/strict-grids", label: "Strict Grids" },
       { href: "/blog/dark-editorial-systems", label: "Dark Editorial Systems" }
     ]
   },
   {
-    label: "Carbon 12",
+    label: "Archive",
     links: [
-      { href: "/about", label: "Background" },
+      { href: "/", label: "Archive" },
+      { href: "/about", label: "About" },
       { href: "/contact", label: "Contact" }
     ]
   }
@@ -32,9 +33,9 @@ const groups = [
 
 function pageLabel(pathname: string) {
   if (pathname === "/") return "Archive";
-  if (pathname.startsWith("/projects")) return "Projects";
-  if (pathname.startsWith("/blog")) return "Notes";
-  if (pathname.startsWith("/about")) return "Background";
+  if (pathname.startsWith("/projects")) return "Portfolio";
+  if (pathname.startsWith("/blog")) return "Ideas";
+  if (pathname.startsWith("/about")) return "About";
   if (pathname.startsWith("/contact")) return "Contact";
   return "Carbon 12";
 }
@@ -107,7 +108,7 @@ export function Header() {
             className="rounded-full border border-white px-8 py-4 text-center text-white hover:bg-white hover:text-[#171717]"
             onClick={() => setOpen(false)}
           >
-            View work
+            Portfolio
           </Link>
           <Link
             href="/contact"

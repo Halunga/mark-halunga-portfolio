@@ -1,17 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState } from "react";
 import { KarmaCardArt } from "@/components/KarmaCardArt";
 import { karmaCards, karmaIntro } from "@/data/good-karma";
 
-const INITIAL_COUNT = 6;
-
 export function KarmaHome() {
-  const [visibleCount, setVisibleCount] = useState(INITIAL_COUNT);
-  const visibleCards = useMemo(() => karmaCards.slice(0, visibleCount), [visibleCount]);
-  const canLoadMore = visibleCount < karmaCards.length;
-
   return (
     <div className="min-h-screen bg-[#171717] text-white">
       <section className="mx-auto w-full max-w-[1200px] px-5 pb-12 pt-8 md:pb-16">
@@ -28,7 +21,7 @@ export function KarmaHome() {
         </div>
 
         <div className="grid gap-4 md:grid-cols-3 md:gap-6">
-          {visibleCards.map((card) => (
+          {karmaCards.map((card) => (
             <Link
               key={`${card.href}-${card.title}`}
               href={card.href}
@@ -42,6 +35,9 @@ export function KarmaHome() {
                 <h2 className="max-w-[290px] text-[27px] font-medium leading-[1.08] tracking-[-0.035em] md:text-[30px]">
                   {card.title}
                 </h2>
+                <p className="mt-4 max-w-[270px] text-[15px] leading-6 text-white/68">
+                  {card.description}
+                </p>
               </div>
               <KarmaCardArt art={card.art} />
               <span className="karma-arrow" aria-hidden="true">
@@ -51,17 +47,14 @@ export function KarmaHome() {
           ))}
         </div>
 
-        {canLoadMore ? (
-          <div className="flex justify-center pt-10">
-            <button
-              type="button"
-              className="rounded-full border border-white/55 px-12 py-4 text-[24px] font-semibold text-white transition hover:bg-white hover:text-[#171717]"
-              onClick={() => setVisibleCount((count) => Math.min(count + 3, karmaCards.length))}
-            >
-              Load More
-            </button>
-          </div>
-        ) : null}
+        <div className="flex justify-center pt-10">
+          <Link
+            href="/projects"
+            className="rounded-full border border-white/55 px-12 py-4 text-[24px] font-semibold text-white transition hover:bg-white hover:text-[#171717]"
+          >
+            View Archive
+          </Link>
+        </div>
       </section>
     </div>
   );

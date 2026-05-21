@@ -4,7 +4,7 @@ import { KarmaHome } from "@/components/KarmaHome";
 export const metadata: Metadata = {
   title: "Carbon 12 | Archive",
   description:
-    "Design notes, AI image tests, water records, spatial studies, interface systems, and unfinished ideas from Carbon 12."
+    "Visual work, film and motion, environments, notes, process material, and collected records from Carbon 12."
 };
 
 export default function HomePage() {
