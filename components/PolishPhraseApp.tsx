@@ -119,6 +119,25 @@ const phrases: Phrase[] = [
     category: "Personal"
   },
   {
+    english: "I can't seem to find my clothes.",
+    polish: "Nie mogę znaleźć swoich ubrań.",
+    pronunciation: "nyeh MOH-geh ZNAH-leshch SFOH-ikh OO-brahn",
+    category: "Personal"
+  },
+  {
+    english: "Hey! Those are my clothes you have on!",
+    polish: "Hej! Masz na sobie moje ubrania!",
+    pronunciation: "hey mash nah SOH-byeh MOH-yeh oo-BRAH-nyah",
+    category: "Personal"
+  },
+  {
+    english: "Your panties are way too tight for me in the front",
+    polish: "Twoje majtki są dla mnie z przodu zdecydowanie za ciasne",
+    pronunciation:
+      "TFOH-yeh MAI-tkee soh dla mnyeh z PZHOH-doo zdeh-tsih-doh-VAH-nyeh zah CHAS-neh",
+    category: "Personal"
+  },
+  {
     english: "How many times should a woman get hit at work in Sweden?",
     polish: "Ile razy kobieta powinna zostać uderzona w pracy w Szwecji?",
     pronunciation:

@@ -33,6 +33,24 @@ const phrases = [
     "chih MOH-zhesh mee POH-moots zdjohnch oo-BRAH-nyeh"
   ],
   [
+    "Personal",
+    "I can't seem to find my clothes.",
+    "Nie mogę znaleźć swoich ubrań.",
+    "nyeh MOH-geh ZNAH-leshch SFOH-ikh OO-brahn"
+  ],
+  [
+    "Personal",
+    "Hey! Those are my clothes you have on!",
+    "Hej! Masz na sobie moje ubrania!",
+    "hey mash nah SOH-byeh MOH-yeh oo-BRAH-nyah"
+  ],
+  [
+    "Personal",
+    "Your panties are way too tight for me in the front",
+    "Twoje majtki są dla mnie z przodu zdecydowanie za ciasne",
+    "TFOH-yeh MAI-tkee soh dla mnyeh z PZHOH-doo zdeh-tsih-doh-VAH-nyeh zah CHAS-neh"
+  ],
+  [
     "Borscht",
     "How many times should a woman get hit at work in Sweden?",
     "Ile razy kobieta powinna zostać uderzona w pracy w Szwecji?",
