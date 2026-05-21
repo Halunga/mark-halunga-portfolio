@@ -13,7 +13,25 @@ const phrases = [
   ["Food", "I would like coffee", "Poproszę kawę", "poh-PROH-sheh KAH-veh"],
   ["Food", "The bill, please", "Rachunek poproszę", "rah-HOO-nek poh-PROH-sheh"],
   ["Help", "I need help", "Potrzebuję pomocy", "poh-tsheh-BOO-yeh poh-MOH-tsih"],
-  ["Help", "I do not understand", "Nie rozumiem", "nyeh roh-ZOO-myem"]
+  ["Help", "I do not understand", "Nie rozumiem", "nyeh roh-ZOO-myem"],
+  [
+    "Personal",
+    "Shall we take off our clothes now?",
+    "Czy teraz zdejmiemy ubrania?",
+    "chih TEH-raz zdey-MYEH-mih oo-BRAH-nyah"
+  ],
+  [
+    "Personal",
+    "Shall I take off my clothes now?",
+    "Czy mam teraz zdjąć ubranie?",
+    "chih mam TEH-raz zdjohnch oo-BRAH-nyeh"
+  ],
+  [
+    "Personal",
+    "Can you help me take off my clothes?",
+    "Czy możesz mi pomóc zdjąć ubranie?",
+    "chih MOH-zhesh mee POH-moots zdjohnch oo-BRAH-nyeh"
+  ]
 ].map(([category, english, polish, pronunciation]) => ({
   category,
   english,
@@ -21,7 +39,7 @@ const phrases = [
   pronunciation
 }));
 
-const categories = ["All", "Greetings", "Polite", "Travel", "Food", "Help"];
+const categories = ["All", "Greetings", "Polite", "Travel", "Food", "Help", "Personal"];
 const state = {
   category: "All",
   current: phrases[0],

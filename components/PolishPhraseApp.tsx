@@ -6,7 +6,7 @@ type Phrase = {
   english: string;
   polish: string;
   pronunciation: string;
-  category: "Greetings" | "Polite" | "Travel" | "Food" | "Help";
+  category: "Greetings" | "Polite" | "Travel" | "Food" | "Help" | "Personal";
 };
 
 const phrases: Phrase[] = [
@@ -99,10 +99,28 @@ const phrases: Phrase[] = [
     polish: "Nie rozumiem",
     pronunciation: "nyeh roh-ZOO-myem",
     category: "Help"
+  },
+  {
+    english: "Shall we take off our clothes now?",
+    polish: "Czy teraz zdejmiemy ubrania?",
+    pronunciation: "chih TEH-raz zdey-MYEH-mih oo-BRAH-nyah",
+    category: "Personal"
+  },
+  {
+    english: "Shall I take off my clothes now?",
+    polish: "Czy mam teraz zdjąć ubranie?",
+    pronunciation: "chih mam TEH-raz zdjohnch oo-BRAH-nyeh",
+    category: "Personal"
+  },
+  {
+    english: "Can you help me take off my clothes?",
+    polish: "Czy możesz mi pomóc zdjąć ubranie?",
+    pronunciation: "chih MOH-zhesh mee POH-moots zdjohnch oo-BRAH-nyeh",
+    category: "Personal"
   }
 ];
 
-const categories = ["All", "Greetings", "Polite", "Travel", "Food", "Help"] as const;
+const categories = ["All", "Greetings", "Polite", "Travel", "Food", "Help", "Personal"] as const;
 
 export function PolishPhraseApp() {
   const [selectedCategory, setSelectedCategory] = useState<(typeof categories)[number]>("All");
