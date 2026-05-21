@@ -14,9 +14,9 @@ export default async function BlogPage() {
   return (
     <>
       <PageIntro
-        eyebrow="Journal"
-        title="Notes in public."
-        description="Short essays, fragments, references, and working notes on visual systems, publishing, restraint, and the internet."
+        eyebrow="Writing"
+        title="Notes from the build."
+        description="Short essays, references, and working notes on front-end craft, interface quality, content systems, and the web."
       />
       <PostList posts={posts} />
     </>

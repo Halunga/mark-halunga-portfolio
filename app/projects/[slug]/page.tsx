@@ -37,7 +37,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
       <section className="mx-auto grid max-w-grid gap-8 px-4 pb-12 pt-14 sm:px-6 md:grid-cols-12 md:pb-20 md:pt-20 lg:px-8">
         <p className="text-xs font-black uppercase text-rust md:col-span-3">{meta.discipline}</p>
         <div className="md:col-span-9">
-          <h1 className="max-w-5xl font-serif text-[clamp(3.4rem,11vw,10rem)] font-medium leading-[0.8]">
+          <h1 className="cover-title max-w-5xl font-serif text-[clamp(3.4rem,11vw,10rem)] font-medium leading-[0.78]">
             {meta.title}
           </h1>
           <p className="mt-7 max-w-2xl text-lg leading-8 text-steel">{meta.summary}</p>
@@ -52,7 +52,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             fill
             priority
             sizes="100vw"
-            className="object-cover"
+            className="image-treatment object-cover"
           />
         </div>
       </div>

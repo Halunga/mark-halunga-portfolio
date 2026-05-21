@@ -12,8 +12,8 @@ export default function ContactPage() {
     <>
       <PageIntro
         eyebrow="Contact"
-        title="Start with a precise note."
-        description="Use this page for direct inquiries, collaboration requests, commissions, speaking, writing, or editorial projects."
+        title="Send the project shape."
+        description="For websites, portfolio systems, front-end implementation, design polish, or content-driven builds."
       />
       <section className="mx-auto grid max-w-grid gap-8 px-4 sm:px-6 md:grid-cols-12 lg:px-8">
         <div className="md:col-span-3">
@@ -22,19 +22,19 @@ export default function ContactPage() {
         <div className="grid gap-4 md:col-span-7">
           <Link
             href="mailto:hello@markhalunga.com"
-            className="border border-white/15 p-6 text-2xl font-semibold hover:bg-ink hover:text-coal"
+            className="border border-white/15 p-6 font-serif text-4xl font-medium leading-none hover:bg-ink hover:text-coal sm:text-6xl"
           >
             hello@markhalunga.com
           </Link>
           <Link
             href="https://www.linkedin.com/"
-            className="border border-white/15 p-6 text-2xl font-semibold hover:bg-ink hover:text-coal"
+            className="border border-white/15 p-6 font-serif text-4xl font-medium leading-none hover:bg-ink hover:text-coal sm:text-6xl"
           >
             LinkedIn
           </Link>
           <Link
             href="https://github.com/"
-            className="border border-white/15 p-6 text-2xl font-semibold hover:bg-ink hover:text-coal"
+            className="border border-white/15 p-6 font-serif text-4xl font-medium leading-none hover:bg-ink hover:text-coal sm:text-6xl"
           >
             GitHub
           </Link>

@@ -14,9 +14,9 @@ export default async function ProjectsPage() {
   return (
     <>
       <PageIntro
-        eyebrow="Portfolio"
-        title="Selected work."
-        description="A strict-grid archive for case studies, commissioned systems, experiments, and image-led digital work."
+        eyebrow="Work"
+        title="Selected builds."
+        description="Websites, interfaces, publishing systems, and front-end experiments structured as replaceable case studies."
       />
       <div className="mx-auto max-w-grid px-4 sm:px-6 lg:px-8">
         {projects.map((project, index) => (

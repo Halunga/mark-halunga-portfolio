@@ -11,8 +11,8 @@ export default function AboutPage() {
     <>
       <PageIntro
         eyebrow="About"
-        title="Quiet systems. Sharp surfaces."
-        description="A placeholder biography for Mark Halunga. Replace this with a direct account of your background, values, clients, and current focus."
+        title="Frontend with taste and discipline."
+        description="Mark Halunga builds fast, refined websites and content systems with a focus on structure, atmosphere, accessibility, and maintainable implementation."
       />
       <section className="mx-auto grid max-w-grid gap-8 px-4 sm:px-6 md:grid-cols-12 lg:px-8">
         <div className="md:col-span-3">
@@ -20,20 +20,20 @@ export default function AboutPage() {
         </div>
         <div className="prose-mark md:col-span-7">
           <p>
-            Mark Halunga is a placeholder title for an independent creative technologist,
-            designer, writer, or studio practice. The site is structured to support selected work,
-            long-form case studies, essays, and a direct contact path without marketing clutter.
+            Mark Halunga works across front-end development, interface design, and digital
+            publishing. The focus is practical: build sites that load quickly, navigate clearly, and
+            make the content feel considered rather than assembled from a template.
           </p>
           <p>
-            Use this page for a concise biography, location, current availability, selected
-            collaborators, press references, or a short manifesto. Keep the writing concrete and
-            let the work carry the atmosphere.
+            This page is ready for a more personal biography, location, client history, and current
+            availability. The structure is intentionally direct so the work and writing stay in
+            front.
           </p>
           <h2>Capabilities</h2>
           <ul>
-            <li>Editorial web design and front-end implementation</li>
-            <li>Identity systems, art direction, and digital publications</li>
-            <li>Portfolio architecture, content systems, and performance-focused builds</li>
+            <li>Next.js, TypeScript, Tailwind, and component-driven front ends</li>
+            <li>Responsive navigation, accessibility, SEO, and performance-minded builds</li>
+            <li>Portfolio architecture, MDX content systems, and editorial interfaces</li>
           </ul>
         </div>
       </section>
