@@ -1,23 +1,20 @@
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://halunga.github.io/mark-halunga-portfolio"),
+  metadataBase: new URL("https://halunga.github.io/polish-phrasebook"),
   title: {
-    default: "Mark Halunga | Portfolio and Journal",
-    template: "%s | Mark Halunga"
+    default: "Polish Phrasebook",
+    template: "%s | Polish Phrasebook"
   },
   description:
-    "Mark Halunga builds fast, polished websites, portfolio systems, and editorial front ends with Next.js, TypeScript, Tailwind, and MDX.",
+    "A focused Polish phrasebook app with common phrases, pronunciation hints, and browser audio playback.",
   openGraph: {
-    title: "Mark Halunga | Portfolio and Journal",
-    description:
-      "Fast websites, portfolio systems, and editorial front ends by Mark Halunga.",
-    url: "https://halunga.github.io/mark-halunga-portfolio",
-    siteName: "Mark Halunga",
+    title: "Polish Phrasebook",
+    description: "Listen to common Polish phrases for everyday conversation.",
+    url: "https://halunga.github.io/polish-phrasebook",
+    siteName: "Polish Phrasebook",
     images: [{ url: "/images/og-mark-halunga.svg", width: 1200, height: 630 }],
     locale: "en_US",
     type: "website"
@@ -31,7 +28,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#f5f5f7"
+  themeColor: "#f6f3ed"
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
@@ -44,9 +41,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         >
           Skip to content
         </a>
-        <Header />
         <main id="content">{children}</main>
-        <Footer />
         <div className="noise" aria-hidden="true" />
       </body>
     </html>
