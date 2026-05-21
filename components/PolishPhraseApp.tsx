@@ -6,7 +6,7 @@ type Phrase = {
   english: string;
   polish: string;
   pronunciation: string;
-  category: "Greetings" | "Polite" | "Travel" | "Food" | "Help" | "Personal";
+  category: "Greetings" | "Polite" | "Travel" | "Food" | "Help" | "Personal" | "Borscht";
 };
 
 const phrases: Phrase[] = [
@@ -117,10 +117,78 @@ const phrases: Phrase[] = [
     polish: "Czy możesz mi pomóc zdjąć ubranie?",
     pronunciation: "chih MOH-zhesh mee POH-moots zdjohnch oo-BRAH-nyeh",
     category: "Personal"
+  },
+  {
+    english: "How many times should a woman get hit at work in Sweden?",
+    polish: "Ile razy kobieta powinna zostać uderzona w pracy w Szwecji?",
+    pronunciation:
+      "EE-leh RAH-zih koh-BYEH-tah poh-VIN-nah ZOH-stach oo-deh-ZHOH-nah f PRAH-tsih f SHFET-syee",
+    category: "Borscht"
+  },
+  {
+    english: "Do you put bad kids who hit women in the Borscht?",
+    polish: "Czy wkładacie niegrzeczne dzieci, które biją kobiety, do barszczu?",
+    pronunciation:
+      "chih fk-wah-DAH-cheh nyeh-GZHECH-neh JYEH-chee KTOO-reh BEE-yoh koh-BYEH-tih doh BARSH-choo",
+    category: "Borscht"
+  },
+  {
+    english: "I can't afford an Uber, can you please direct me to horse and cart rentals?",
+    polish: "Nie stać mnie na Ubera, czy możesz mnie skierować do wypożyczalni koni i wozów?",
+    pronunciation:
+      "nyeh stach mnyeh nah OO-beh-rah chih MOH-zhesh mnyeh skyeh-roh-VACH doh vih-poh-zhih-CHAL-nee KOH-nee ee VOH-zoof",
+    category: "Borscht"
+  },
+  {
+    english: "Where is the Borscht?",
+    polish: "Gdzie jest barszcz?",
+    pronunciation: "gdjeh yest barshtch",
+    category: "Borscht"
+  },
+  {
+    english: "I need more Borscht",
+    polish: "Potrzebuję więcej barszczu",
+    pronunciation: "poh-tsheh-BOO-yeh VYEN-tsey BARSH-choo",
+    category: "Borscht"
+  },
+  {
+    english: "What the fuck do you mean you are out of Borscht?",
+    polish: "Co, kurwa, znaczy, że skończył się barszcz?",
+    pronunciation: "tso KOOR-vah ZNAH-chih zheh SKON-chil shyeh barshtch",
+    category: "Borscht"
+  },
+  {
+    english: "Borscht Borscht Borscht, what's up with all this Borscht?",
+    polish: "Barszcz, barszcz, barszcz, o co chodzi z tym całym barszczem?",
+    pronunciation: "barshtch barshtch barshtch oh tso HOH-jee z tim TSAH-wim BARSH-chem",
+    category: "Borscht"
+  },
+  {
+    english: "Honey, I'm home, go get me my beer and a sandwich, or Borscht then?",
+    polish: "Kochanie, jestem w domu, przynieś mi piwo i kanapkę, albo może barszcz?",
+    pronunciation:
+      "koh-HAH-nyeh YES-tem v DOH-moo PZHI-nyesh mee PEE-voh ee kah-NAP-keh AL-boh MOH-zheh barshtch",
+    category: "Borscht"
+  },
+  {
+    english: "I hardly smile, drink a lot of vodka and love the pope. Am I Polish now?",
+    polish: "Rzadko się uśmiecham, dużo piję wódki i kocham papieża. Czy teraz jestem Polakiem?",
+    pronunciation:
+      "ZHAT-koh shyeh oosh-MYEH-ham DOO-zhoh PEE-yeh VOOT-kee ee KOH-ham pah-PYEH-zhah chih TEH-raz YES-tem poh-LAH-kyem",
+    category: "Borscht"
   }
 ];
 
-const categories = ["All", "Greetings", "Polite", "Travel", "Food", "Help", "Personal"] as const;
+const categories = [
+  "All",
+  "Greetings",
+  "Polite",
+  "Travel",
+  "Food",
+  "Help",
+  "Personal",
+  "Borscht"
+] as const;
 
 export function PolishPhraseApp() {
   const [selectedCategory, setSelectedCategory] = useState<(typeof categories)[number]>("All");

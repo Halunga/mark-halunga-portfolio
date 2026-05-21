@@ -31,6 +31,50 @@ const phrases = [
     "Can you help me take off my clothes?",
     "Czy możesz mi pomóc zdjąć ubranie?",
     "chih MOH-zhesh mee POH-moots zdjohnch oo-BRAH-nyeh"
+  ],
+  [
+    "Borscht",
+    "How many times should a woman get hit at work in Sweden?",
+    "Ile razy kobieta powinna zostać uderzona w pracy w Szwecji?",
+    "EE-leh RAH-zih koh-BYEH-tah poh-VIN-nah ZOH-stach oo-deh-ZHOH-nah f PRAH-tsih f SHFET-syee"
+  ],
+  [
+    "Borscht",
+    "Do you put bad kids who hit women in the Borscht?",
+    "Czy wkładacie niegrzeczne dzieci, które biją kobiety, do barszczu?",
+    "chih fk-wah-DAH-cheh nyeh-GZHECH-neh JYEH-chee KTOO-reh BEE-yoh koh-BYEH-tih doh BARSH-choo"
+  ],
+  [
+    "Borscht",
+    "I can't afford an Uber, can you please direct me to horse and cart rentals?",
+    "Nie stać mnie na Ubera, czy możesz mnie skierować do wypożyczalni koni i wozów?",
+    "nyeh stach mnyeh nah OO-beh-rah chih MOH-zhesh mnyeh skyeh-roh-VACH doh vih-poh-zhih-CHAL-nee KOH-nee ee VOH-zoof"
+  ],
+  ["Borscht", "Where is the Borscht?", "Gdzie jest barszcz?", "gdjeh yest barshtch"],
+  ["Borscht", "I need more Borscht", "Potrzebuję więcej barszczu", "poh-tsheh-BOO-yeh VYEN-tsey BARSH-choo"],
+  [
+    "Borscht",
+    "What the fuck do you mean you are out of Borscht?",
+    "Co, kurwa, znaczy, że skończył się barszcz?",
+    "tso KOOR-vah ZNAH-chih zheh SKON-chil shyeh barshtch"
+  ],
+  [
+    "Borscht",
+    "Borscht Borscht Borscht, what's up with all this Borscht?",
+    "Barszcz, barszcz, barszcz, o co chodzi z tym całym barszczem?",
+    "barshtch barshtch barshtch oh tso HOH-jee z tim TSAH-wim BARSH-chem"
+  ],
+  [
+    "Borscht",
+    "Honey, I'm home, go get me my beer and a sandwich, or Borscht then?",
+    "Kochanie, jestem w domu, przynieś mi piwo i kanapkę, albo może barszcz?",
+    "koh-HAH-nyeh YES-tem v DOH-moo PZHI-nyesh mee PEE-voh ee kah-NAP-keh AL-boh MOH-zheh barshtch"
+  ],
+  [
+    "Borscht",
+    "I hardly smile, drink a lot of vodka and love the pope. Am I Polish now?",
+    "Rzadko się uśmiecham, dużo piję wódki i kocham papieża. Czy teraz jestem Polakiem?",
+    "ZHAT-koh shyeh oosh-MYEH-ham DOO-zhoh PEE-yeh VOOT-kee ee KOH-ham pah-PYEH-zhah chih TEH-raz YES-tem poh-LAH-kyem"
   ]
 ].map(([category, english, polish, pronunciation]) => ({
   category,
@@ -39,7 +83,7 @@ const phrases = [
   pronunciation
 }));
 
-const categories = ["All", "Greetings", "Polite", "Travel", "Food", "Help", "Personal"];
+const categories = ["All", "Greetings", "Polite", "Travel", "Food", "Help", "Personal", "Borscht"];
 const state = {
   category: "All",
   current: phrases[0],
