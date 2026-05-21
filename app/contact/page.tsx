@@ -27,19 +27,19 @@ export default function ContactPage() {
           </p>
           <Link
             href="mailto:hello@markhalunga.com"
-            className="border border-white/15 p-6 font-serif text-4xl font-medium leading-none hover:bg-ink hover:text-coal sm:text-6xl"
+            className="border border-black/15 p-6 font-serif text-4xl font-medium leading-none hover:bg-ink hover:text-coal sm:text-6xl"
           >
             hello@markhalunga.com
           </Link>
           <Link
             href="https://www.linkedin.com/"
-            className="border border-white/15 p-6 font-serif text-4xl font-medium leading-none hover:bg-ink hover:text-coal sm:text-6xl"
+            className="border border-black/15 p-6 font-serif text-4xl font-medium leading-none hover:bg-ink hover:text-coal sm:text-6xl"
           >
             LinkedIn
           </Link>
           <Link
             href="https://github.com/"
-            className="border border-white/15 p-6 font-serif text-4xl font-medium leading-none hover:bg-ink hover:text-coal sm:text-6xl"
+            className="border border-black/15 p-6 font-serif text-4xl font-medium leading-none hover:bg-ink hover:text-coal sm:text-6xl"
           >
             GitHub
           </Link>

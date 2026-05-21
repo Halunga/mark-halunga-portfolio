@@ -10,7 +10,7 @@ export function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-white/10 bg-coal/80 text-ink backdrop-blur-xl">
+    <header className="sticky top-0 z-40 border-b border-black/10 bg-coal/80 text-ink backdrop-blur-xl">
       <nav
         className="mx-auto grid h-[var(--site-nav-height)] max-w-grid grid-cols-[auto_1fr_auto] items-center gap-4 px-4 sm:px-6 lg:px-8"
         aria-label="Main navigation"
@@ -58,13 +58,13 @@ export function Header() {
 
       <div
         id="mobile-menu"
-        className={`${open ? "grid" : "hidden"} border-t border-white/10 bg-coal md:hidden`}
+        className={`${open ? "grid" : "hidden"} border-t border-black/10 bg-coal md:hidden`}
       >
         {navigation.map((item) => (
           <Link
             key={item.href}
             href={item.href}
-            className="border-b border-white/10 px-5 py-5 font-serif text-4xl font-medium"
+            className="border-b border-black/10 px-5 py-5 font-serif text-4xl font-medium"
             onClick={() => setOpen(false)}
           >
             {item.label}

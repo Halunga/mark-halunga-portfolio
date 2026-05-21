@@ -9,13 +9,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        bone: "#f4efe6",
-        ink: "#f5f1e8",
-        coal: "#070707",
-        night: "#101010",
-        steel: "#a7ada6",
-        moss: "#7f8f79",
-        rust: "#b95f42"
+        bone: "#f6f3ed",
+        ink: "#1d1d1f",
+        coal: "#f6f3ed",
+        night: "#e8e3d9",
+        steel: "#6e6e73",
+        moss: "#6f7f70",
+        rust: "#9f4f38"
       },
       fontFamily: {
         sans: ["var(--font-sans)", "Arial", "sans-serif"],

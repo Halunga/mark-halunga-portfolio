@@ -43,7 +43,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           {meta.title}
         </h1>
         <p className="mt-7 max-w-2xl text-lg leading-8 text-steel">{meta.excerpt}</p>
-        <div className="prose-mark mt-12 border-t border-white/15 pt-10">
+        <div className="prose-mark mt-12 border-t border-black/15 pt-10">
           <Content />
         </div>
       </div>

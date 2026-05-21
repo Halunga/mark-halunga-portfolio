@@ -31,14 +31,14 @@ export default async function HomePage() {
           <div className="absolute inset-0 bg-gradient-to-t from-coal via-coal/70 to-coal/20" />
         </div>
         <div className="relative mx-auto grid w-full max-w-grid gap-8 md:grid-cols-12">
-          <div className="border-t border-white/20 pt-5 md:col-span-3">
+          <div className="border-t border-black/20 pt-5 md:col-span-3">
             <p className="text-xs font-black uppercase tracking-[0.2em] text-rust">{homeCopy.hero.eyebrow}</p>
           </div>
           <div className="md:col-span-9">
             <h1 className="hero-title cover-title max-w-6xl font-serif font-medium">
               {homeCopy.hero.title}
             </h1>
-            <p className="mt-8 max-w-2xl text-lg leading-8 text-ink/80">{homeCopy.hero.intro}</p>
+            <p className="mt-8 max-w-2xl text-lg leading-8 text-ink/75">{homeCopy.hero.intro}</p>
           </div>
         </div>
       </section>
@@ -50,7 +50,7 @@ export default async function HomePage() {
             <Link
               key={project.slug}
               href={`/projects/${project.slug}`}
-              className={`group relative min-h-[440px] overflow-hidden border border-white/10 bg-white/5 ${
+              className={`group relative min-h-[440px] overflow-hidden border border-black/10 bg-black/[0.03] ${
                 index === 0 ? "md:col-span-2" : ""
               }`}
             >
@@ -83,7 +83,7 @@ export default async function HomePage() {
           </h2>
           <div className="grid gap-5 md:col-span-6">
             {posts.slice(0, 2).map((post) => (
-              <Link key={post.slug} href={post.href} className="group border-t border-white/15 pt-5">
+              <Link key={post.slug} href={post.href} className="group border-t border-black/15 pt-5">
                 <p className="text-xs font-black uppercase tracking-[0.2em] text-rust">
                   {post.category} / {post.readingTime}
                 </p>
@@ -98,10 +98,10 @@ export default async function HomePage() {
       </section>
 
       <section className="mx-auto grid max-w-grid gap-8 px-4 py-20 sm:px-6 md:grid-cols-12 md:py-28 lg:px-8">
-        <p className="border-t border-white/15 pt-5 text-xs font-black uppercase tracking-[0.2em] text-rust md:col-span-3">
+        <p className="border-t border-black/15 pt-5 text-xs font-black uppercase tracking-[0.2em] text-rust md:col-span-3">
           About Mark
         </p>
-        <div className="border-t border-white/15 pt-5 md:col-span-9">
+        <div className="border-t border-black/15 pt-5 md:col-span-9">
           <p className="display-title cover-title max-w-5xl font-serif font-medium">
             {homeCopy.about}
           </p>
@@ -110,7 +110,7 @@ export default async function HomePage() {
 
       <section id="services" className="py-16 md:py-24">
         <SectionLabel>Skills and services</SectionLabel>
-        <div className="mx-auto mt-8 grid max-w-grid gap-px border-y border-white/10 bg-white/10 px-4 sm:px-6 md:grid-cols-2 lg:grid-cols-4 lg:px-8">
+        <div className="mx-auto mt-8 grid max-w-grid gap-px border-y border-black/10 bg-black/10 px-4 sm:px-6 md:grid-cols-2 lg:grid-cols-4 lg:px-8">
           {homeCopy.services.map((service) => (
             <article key={service.title} className="min-h-72 bg-coal p-6">
               <h2 className="font-serif text-4xl font-medium leading-none">{service.title}</h2>
@@ -121,14 +121,14 @@ export default async function HomePage() {
       </section>
 
       <section className="mx-auto max-w-grid px-4 py-24 sm:px-6 md:py-32 lg:px-8">
-        <div className="border-t border-white/15 pt-6">
+        <div className="border-t border-black/15 pt-6">
           <p className="text-xs font-black uppercase tracking-[0.2em] text-rust">Contact</p>
           <h2 className="display-title mt-8 max-w-5xl font-serif font-medium">
             Bring the project shape. I’ll bring the system.
           </h2>
           <Link
             href="/contact"
-            className="mt-10 inline-flex border border-white/20 px-6 py-4 text-sm font-bold uppercase tracking-[0.18em] text-ink transition hover:border-rust hover:text-rust"
+            className="mt-10 inline-flex border border-black/20 px-6 py-4 text-sm font-bold uppercase tracking-[0.18em] text-ink transition hover:border-rust hover:text-rust"
           >
             Start a conversation
           </Link>

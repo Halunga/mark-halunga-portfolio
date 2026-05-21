@@ -6,9 +6,9 @@ export function ProjectCard({ project, priority = false }: { project: ProjectMet
   return (
     <Link
       href={`/projects/${project.slug}`}
-      className="group block border-t border-white/15 py-5"
+      className="group block border-t border-black/15 py-5"
     >
-      <div className="relative aspect-[5/4] overflow-hidden bg-white/5">
+      <div className="relative aspect-[5/4] overflow-hidden bg-black/[0.03]">
         <Image
           src={project.thumbnail}
           alt={`${project.title} project thumbnail`}
@@ -30,7 +30,7 @@ export function ProjectCard({ project, priority = false }: { project: ProjectMet
         <p className="mt-5 max-w-2xl leading-7 text-steel">{project.shortDescription}</p>
         <ul className="mt-6 flex flex-wrap gap-2" aria-label="Project tags">
           {project.tags.map((tag) => (
-            <li key={tag} className="border border-white/15 px-3 py-1 text-xs uppercase text-steel">
+            <li key={tag} className="border border-black/15 px-3 py-1 text-xs uppercase text-steel">
               {tag}
             </li>
           ))}

@@ -5,7 +5,7 @@ export function PostList({ posts }: { posts: PostMeta[] }) {
   return (
     <div className="mx-auto max-w-grid px-4 sm:px-6 lg:px-8">
       {posts.map((post) => (
-        <article key={post.slug} className="grid border-t border-white/15 py-8 md:grid-cols-12 md:gap-6">
+        <article key={post.slug} className="grid border-t border-black/15 py-8 md:grid-cols-12 md:gap-6">
           <div className="md:col-span-3">
             <time className="text-xs font-bold uppercase text-rust" dateTime={post.date}>
               {post.date} / {post.category}
