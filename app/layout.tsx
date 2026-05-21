@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#070707"
+  themeColor: "#f5f5f7"
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
@@ -40,7 +40,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body>
         <a
           href="#content"
-          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:bg-ink focus:px-4 focus:py-3 focus:text-coal"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:bg-black focus:px-4 focus:py-3 focus:text-white"
         >
           Skip to content
         </a>
