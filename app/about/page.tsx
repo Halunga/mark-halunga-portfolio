@@ -14,7 +14,7 @@ export default function AboutPage() {
         title="A practice around images, systems, and useful restraint."
         description="Carbon 12 works across front-end development, visual design, illustration, AI media, architecture visualization, water storytelling, and philosophical editorial systems."
       />
-      <section className="mx-auto grid max-w-grid gap-8 px-4 sm:px-6 md:grid-cols-12 lg:px-8">
+      <section className="mx-auto grid max-w-[1200px] gap-8 px-5 md:grid-cols-12">
         <div className="md:col-span-3">
           <p className="text-xs font-black uppercase tracking-[0.2em] text-rust">Profile</p>
         </div>

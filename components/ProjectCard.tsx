@@ -6,9 +6,9 @@ export function ProjectCard({ project, priority = false }: { project: ProjectMet
   return (
     <Link
       href={`/projects/${project.slug}`}
-      className="group block border-t border-black/15 py-5"
+      className="group block overflow-hidden rounded-2xl bg-white/8 text-white transition duration-300 hover:-translate-y-1 hover:bg-white/12"
     >
-      <div className="relative aspect-[5/4] overflow-hidden bg-black/[0.03]">
+      <div className="relative aspect-[5/4] overflow-hidden bg-white/5">
         <Image
           src={project.thumbnail}
           alt={`${project.title} project thumbnail`}
@@ -17,20 +17,20 @@ export function ProjectCard({ project, priority = false }: { project: ProjectMet
           sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
           className="image-treatment object-cover transition duration-700 group-hover:scale-[1.04]"
         />
-        <div className="absolute inset-0 bg-coal/0 mix-blend-multiply transition group-hover:bg-rust/20" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/55 to-transparent" />
       </div>
-      <div className="pt-5">
+      <div className="p-5">
         <div className="flex items-start justify-between gap-4">
           <p className="text-xs font-bold uppercase tracking-[0.16em] text-rust">{project.category}</p>
-          <p className="text-xs text-steel">{project.year}</p>
+          <p className="text-xs text-white/50">{project.year}</p>
         </div>
-        <h2 className="cover-title mt-4 max-w-3xl font-serif text-5xl font-medium leading-[0.9]">
+        <h2 className="cover-title mt-4 max-w-3xl text-3xl font-medium leading-[1.05] tracking-[-0.04em]">
           {project.title}
         </h2>
-        <p className="mt-5 max-w-2xl leading-7 text-steel">{project.shortDescription}</p>
+        <p className="mt-4 max-w-2xl leading-7 text-white/58">{project.shortDescription}</p>
         <ul className="mt-6 flex flex-wrap gap-2" aria-label="Project tags">
           {project.tags.map((tag) => (
-            <li key={tag} className="border border-black/15 px-3 py-1 text-xs uppercase text-steel">
+            <li key={tag} className="rounded-full border border-white/15 px-3 py-1 text-xs uppercase text-white/55">
               {tag}
             </li>
           ))}

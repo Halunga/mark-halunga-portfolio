@@ -148,9 +148,10 @@ a {
 .prose-mark h2 {
   margin: 3rem 0 1rem;
   color: #ffffff;
-  font-family: var(--font-serif);
+  font-family: var(--font-sans);
   font-size: clamp(2rem, 6vw, 4.75rem);
-  font-weight: 500;
+  font-weight: 300;
+  letter-spacing: -0.055em;
   line-height: 0.95;
 }
 
