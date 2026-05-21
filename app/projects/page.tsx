@@ -5,7 +5,7 @@ import { getProjects } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "Portfolio",
-  description: "Selected projects by Mark Halunga."
+  description: "Selected projects by Carbon 12."
 };
 
 export default async function ProjectsPage() {

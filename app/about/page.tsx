@@ -3,7 +3,7 @@ import { PageIntro } from "@/components/PageIntro";
 
 export const metadata: Metadata = {
   title: "About",
-  description: "About Mark Halunga."
+  description: "About Carbon 12."
 };
 
 export default function AboutPage() {
@@ -12,7 +12,7 @@ export default function AboutPage() {
       <PageIntro
         eyebrow="Background"
         title="A practice around images, systems, and useful restraint."
-        description="Mark Halunga works across front-end development, visual design, illustration, AI media, architecture visualization, water storytelling, and philosophical editorial systems."
+        description="Carbon 12 works across front-end development, visual design, illustration, AI media, architecture visualization, water storytelling, and philosophical editorial systems."
       />
       <section className="mx-auto grid max-w-grid gap-8 px-4 sm:px-6 md:grid-cols-12 lg:px-8">
         <div className="md:col-span-3">
@@ -20,7 +20,7 @@ export default function AboutPage() {
         </div>
         <div className="prose-mark md:col-span-7">
           <p>
-            Mark Halunga builds digital work for projects that need atmosphere and structure at the
+            Carbon 12 builds digital work for projects that need atmosphere and structure at the
             same time: portfolios, editorial systems, AI-assisted visual worlds, architecture
             studies, illustration-led concepts, and public-interest water projects.
           </p>

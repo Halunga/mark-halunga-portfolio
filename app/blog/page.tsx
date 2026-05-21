@@ -5,7 +5,7 @@ import { getPosts } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "Notes",
-  description: "Writing and notes from Mark Halunga."
+  description: "Writing and notes from Carbon 12."
 };
 
 export default async function BlogPage() {

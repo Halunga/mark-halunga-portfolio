@@ -1,4 +1,4 @@
-# Mark Halunga Portfolio
+# Carbon 12
 
 A dark editorial portfolio and journal built with Next.js, TypeScript, Tailwind, and MDX.
 

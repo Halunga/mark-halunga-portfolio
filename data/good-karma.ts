@@ -9,7 +9,7 @@ export type KarmaCard = {
 export const karmaIntro = {
   section: "Archive",
   title: "Open notes from a visual practice",
-  accent: "MARK HALUNGA",
+  accent: "CARBON 12",
   description:
     "Design notes, AI image tests, water records, spatial studies, interface systems, and unfinished ideas worth keeping in public."
 };

@@ -4,7 +4,7 @@ import { PageIntro } from "@/components/PageIntro";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Contact Mark Halunga for selected projects and collaborations."
+  description: "Contact Carbon 12 for selected projects and collaborations."
 };
 
 export default function ContactPage() {

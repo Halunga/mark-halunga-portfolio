@@ -1,9 +1,9 @@
 export const siteSettings = {
-  name: "Mark Halunga",
-  url: "https://markhalunga.com",
-  email: "hello@markhalunga.com",
+  name: "Carbon 12",
+  url: "https://carbon12.studio",
+  email: "hello@carbon12.studio",
   description:
-    "A dark Scandinavian portfolio and journal for Mark Halunga, working across design, illustration, AI media, water projects, architecture visualization, philosophy, and creative systems.",
+    "Carbon 12 is a visual archive and studio platform for design, image making, AI tools, water projects, architecture visualization, philosophy, and creative systems.",
   social: {
     linkedin: "https://www.linkedin.com/",
     github: "https://github.com/"

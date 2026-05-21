@@ -1,7 +1,7 @@
 export const homeCopy = {
   hero: {
     eyebrow: "Current focus",
-    title: "Mark Halunga",
+    title: "Carbon 12",
     intro:
       "Design, image making, writing, AI tools, systems, and visual ideas. A small platform for work, notes, tests, and practical concepts."
   },

@@ -23,7 +23,7 @@ const groups = [
     ]
   },
   {
-    label: "Mark",
+    label: "Carbon 12",
     links: [
       { href: "/about", label: "Background" },
       { href: "/contact", label: "Contact" }
@@ -37,7 +37,7 @@ function pageLabel(pathname: string) {
   if (pathname.startsWith("/blog")) return "Notes";
   if (pathname.startsWith("/about")) return "Background";
   if (pathname.startsWith("/contact")) return "Contact";
-  return "Mark Halunga";
+  return "Carbon 12";
 }
 
 export function Header() {
@@ -51,7 +51,7 @@ export function Header() {
           <Link
             href="/"
             className="mr-4 grid h-6 w-8 place-items-center border-r border-white/30 pr-4"
-            aria-label="Mark Halunga home"
+            aria-label="Carbon 12 home"
             onClick={() => setOpen(false)}
           >
             <span className="text-[18px]">⌂</span>
