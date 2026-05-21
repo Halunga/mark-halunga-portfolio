@@ -39,7 +39,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         <p className="mt-3 text-xs uppercase tracking-[0.18em] text-steel">{meta.readingTime}</p>
       </aside>
       <div className="md:col-span-8">
-        <h1 className="max-w-5xl font-serif text-[clamp(3.2rem,10vw,8rem)] font-medium leading-[0.84]">
+        <h1 className="max-w-4xl font-serif text-[clamp(2.2rem,5vw,4.5rem)] font-medium leading-[0.96]">
           {meta.title}
         </h1>
         <p className="mt-7 max-w-2xl text-lg leading-8 text-steel">{meta.excerpt}</p>

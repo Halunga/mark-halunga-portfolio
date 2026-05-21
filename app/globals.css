@@ -77,17 +77,62 @@ a {
 }
 
 .hero-title {
-  font-size: clamp(3.6rem, 8.6vw, 9.25rem);
-  line-height: 0.86;
+  font-size: clamp(2.2rem, 5vw, 4.5rem);
+  line-height: 0.96;
 }
 
 .display-title {
-  font-size: clamp(3.2rem, 8vw, 8rem);
-  line-height: 0.88;
+  font-size: clamp(2rem, 4.2vw, 3rem);
+  line-height: 1.03;
 }
 
 .image-treatment {
   filter: grayscale(0.15) contrast(1.08) saturate(0.82);
+}
+
+.hero-flow {
+  position: absolute;
+  inset: 8% -12% auto auto;
+  width: min(980px, 78vw);
+  opacity: 0.72;
+}
+
+.hero-flow svg {
+  display: block;
+  width: 100%;
+  overflow: visible;
+}
+
+.hero-flow-line {
+  fill: none;
+  stroke-linecap: round;
+  stroke-width: 1.6;
+  transform-origin: 50% 50%;
+  vector-effect: non-scaling-stroke;
+}
+
+.hero-flow-line-a {
+  stroke: rgba(159, 79, 56, 0.42);
+  stroke-dasharray: 0.22 0.78;
+  animation: flow-draw 13s linear infinite;
+}
+
+.hero-flow-line-b {
+  stroke: rgba(29, 29, 31, 0.2);
+  stroke-dasharray: 0.34 0.66;
+  animation: flow-draw 18s linear infinite reverse;
+}
+
+.hero-flow-line-c {
+  stroke: rgba(111, 127, 112, 0.34);
+  stroke-dasharray: 0.18 0.82;
+  animation: flow-draw 11s linear infinite;
+}
+
+@keyframes flow-draw {
+  to {
+    stroke-dashoffset: -1;
+  }
 }
 
 @media (max-width: 833px) {
@@ -152,5 +197,9 @@ a {
     transition-duration: 0.01ms !important;
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
+  }
+
+  .hero-flow-line {
+    animation: none;
   }
 }

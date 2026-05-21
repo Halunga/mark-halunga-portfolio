@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { HeroFlow } from "@/components/HeroFlow";
 import { SectionLabel } from "@/components/SectionLabel";
 import { homeCopy } from "@/data/home";
 import { getPosts, getProjects } from "@/lib/content";
@@ -26,25 +27,26 @@ export default async function HomePage() {
             fill
             priority
             sizes="100vw"
-            className="image-treatment object-cover opacity-55"
+            className="image-treatment object-cover opacity-18"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-coal via-coal/70 to-coal/20" />
+          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(246,243,237,0.96)_0%,rgba(246,243,237,0.86)_44%,rgba(246,243,237,0.58)_100%)]" />
         </div>
+        <HeroFlow />
         <div className="relative mx-auto grid w-full max-w-grid gap-8 md:grid-cols-12">
           <div className="border-t border-black/20 pt-5 md:col-span-3">
             <p className="text-xs font-black uppercase tracking-[0.2em] text-rust">{homeCopy.hero.eyebrow}</p>
           </div>
-          <div className="md:col-span-9">
-            <h1 className="hero-title cover-title max-w-6xl font-serif font-medium">
+          <div className="md:col-span-7">
+            <h1 className="hero-title cover-title max-w-2xl font-serif font-medium">
               {homeCopy.hero.title}
             </h1>
-            <p className="mt-8 max-w-2xl text-lg leading-8 text-ink/75">{homeCopy.hero.intro}</p>
+            <p className="mt-7 max-w-xl text-xl leading-8 text-ink/75">{homeCopy.hero.intro}</p>
           </div>
         </div>
       </section>
 
-      <section className="py-20 md:py-28">
-        <SectionLabel>Featured work</SectionLabel>
+      <section className="py-16 md:py-24">
+        <SectionLabel>Work</SectionLabel>
         <div className="mx-auto mt-8 grid max-w-grid gap-4 px-4 sm:px-6 md:grid-cols-3 lg:px-8">
           {featuredProjects.map((project, index) => (
             <Link
@@ -66,7 +68,7 @@ export default async function HomePage() {
                 <p className="text-xs font-black uppercase tracking-[0.2em] text-rust">
                   {project.category} / {project.year}
                 </p>
-                <h2 className="mt-4 max-w-xl font-serif text-5xl font-medium leading-[0.9] md:text-7xl">
+                <h2 className="mt-4 max-w-xl font-serif text-4xl font-medium leading-none md:text-5xl">
                   {project.title}
                 </h2>
               </div>
@@ -76,10 +78,10 @@ export default async function HomePage() {
       </section>
 
       <section className="py-12 md:py-24">
-        <SectionLabel>Journal</SectionLabel>
+        <SectionLabel>Notes</SectionLabel>
         <div className="mx-auto mt-8 grid max-w-grid gap-8 px-4 sm:px-6 md:grid-cols-12 lg:px-8">
           <h2 className="display-title cover-title font-serif font-medium md:col-span-6">
-            Essays on making images, interfaces, and thought systems behave.
+            Notes on image making, interface systems, tools, and the odd discipline of finishing things.
           </h2>
           <div className="grid gap-5 md:col-span-6">
             {posts.slice(0, 2).map((post) => (
@@ -99,7 +101,7 @@ export default async function HomePage() {
 
       <section className="mx-auto grid max-w-grid gap-8 px-4 py-20 sm:px-6 md:grid-cols-12 md:py-28 lg:px-8">
         <p className="border-t border-black/15 pt-5 text-xs font-black uppercase tracking-[0.2em] text-rust md:col-span-3">
-          About Mark
+          Background
         </p>
         <div className="border-t border-black/15 pt-5 md:col-span-9">
           <p className="display-title cover-title max-w-5xl font-serif font-medium">
@@ -109,7 +111,7 @@ export default async function HomePage() {
       </section>
 
       <section id="services" className="py-16 md:py-24">
-        <SectionLabel>Skills and services</SectionLabel>
+        <SectionLabel>Current focus</SectionLabel>
         <div className="mx-auto mt-8 grid max-w-grid gap-px border-y border-black/10 bg-black/10 px-4 sm:px-6 md:grid-cols-2 lg:grid-cols-4 lg:px-8">
           {homeCopy.services.map((service) => (
             <article key={service.title} className="min-h-72 bg-coal p-6">
@@ -124,13 +126,13 @@ export default async function HomePage() {
         <div className="border-t border-black/15 pt-6">
           <p className="text-xs font-black uppercase tracking-[0.2em] text-rust">Contact</p>
           <h2 className="display-title mt-8 max-w-5xl font-serif font-medium">
-            Bring the project shape. I’ll bring the system.
+            Send a note if there is something specific to build, test, or make clearer.
           </h2>
           <Link
             href="/contact"
             className="mt-10 inline-flex border border-black/20 px-6 py-4 text-sm font-bold uppercase tracking-[0.18em] text-ink transition hover:border-rust hover:text-rust"
           >
-            Start a conversation
+            Contact
           </Link>
         </div>
       </section>

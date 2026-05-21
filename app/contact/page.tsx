@@ -12,7 +12,7 @@ export default function ContactPage() {
     <>
       <PageIntro
         eyebrow="Contact"
-        title="Send the project shape, the images, or the unresolved idea."
+        title="Send the shape of it."
         description="For selected collaborations in design, AI media, editorial platforms, architecture visualization, water storytelling, and creative systems."
       />
       <section className="mx-auto grid max-w-grid gap-8 px-4 sm:px-6 md:grid-cols-12 lg:px-8">

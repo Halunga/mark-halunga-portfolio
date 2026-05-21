@@ -17,7 +17,7 @@ Homepage text lives in `data/home.ts`.
 Site name, URL, email, and social links live in `data/site.ts`.
 Navigation lives in `data/navigation.ts`.
 
-Project case studies live in `content/projects/*.mdx`.
+Project entries live in `content/projects/*.mdx`.
 
 Each file starts with a `metadata` export:
 
@@ -42,7 +42,7 @@ export const metadata = {
 
 Write the case-study body below the metadata with normal Markdown/MDX.
 
-Journal posts live in `content/blog/*.mdx`. They use the same pattern with `title`,
+Blog and notes posts live in `content/blog/*.mdx`. They use the same pattern with `title`,
 `excerpt`, `date`, `category`, and `readingTime`.
 
 ## Replace Images

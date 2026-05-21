@@ -10,8 +10,8 @@ export default function AboutPage() {
   return (
     <>
       <PageIntro
-        eyebrow="About"
-        title="A visual practice for systems, images, and serious digital presence."
+        eyebrow="Background"
+        title="A practice around images, systems, and useful restraint."
         description="Mark Halunga works across front-end development, visual design, illustration, AI media, architecture visualization, water storytelling, and philosophical editorial systems."
       />
       <section className="mx-auto grid max-w-grid gap-8 px-4 sm:px-6 md:grid-cols-12 lg:px-8">

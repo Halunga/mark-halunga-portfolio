@@ -41,7 +41,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
       <section className="mx-auto grid max-w-grid gap-8 px-4 pb-12 pt-14 sm:px-6 md:grid-cols-12 md:pb-20 md:pt-20 lg:px-8">
         <p className="text-xs font-black uppercase tracking-[0.2em] text-rust md:col-span-3">{meta.category}</p>
         <div className="md:col-span-9">
-          <h1 className="cover-title max-w-5xl font-serif text-[clamp(3.4rem,11vw,10rem)] font-medium leading-[0.78]">
+          <h1 className="cover-title max-w-4xl font-serif text-[clamp(2.2rem,5vw,4.5rem)] font-medium leading-[0.96]">
             {meta.title}
           </h1>
           <p className="mt-7 max-w-2xl text-lg leading-8 text-steel">{meta.shortDescription}</p>
@@ -110,7 +110,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
       <section className="mx-auto max-w-grid px-4 py-16 sm:px-6 lg:px-8">
         <Link href={`/projects/${nextProject.slug}`} className="group block border-t border-black/15 pt-6">
           <p className="text-xs font-black uppercase tracking-[0.2em] text-rust">Next project</p>
-          <h2 className="mt-6 font-serif text-[clamp(3rem,8vw,8rem)] font-medium leading-[0.86] group-hover:text-rust">
+          <h2 className="mt-6 font-serif text-[clamp(2rem,4.2vw,3rem)] font-medium leading-[1.03] group-hover:text-rust">
             {nextProject.title}
           </h2>
         </Link>

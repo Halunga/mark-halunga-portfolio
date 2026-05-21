@@ -1,32 +1,32 @@
 export const homeCopy = {
   hero: {
-    eyebrow: "Design, media, systems",
-    title: "Images, interfaces, ideas. Shaped into calm digital form.",
+    eyebrow: "Current focus",
+    title: "Mark Halunga",
     intro:
-      "Mark Halunga works across visual design, illustration, AI-assisted media, architecture visualization, water-focused initiatives, and philosophical publishing systems."
+      "Design, image making, writing, AI tools, systems, and visual ideas. A small platform for work, notes, tests, and practical concepts."
   },
   about:
-    "A practice built around atmosphere and precision: serious visual storytelling, structured digital products, and editorial systems that make complex work feel legible.",
+    "I work where images, interfaces, research, and plain language need to sit in the same room without making a fuss.",
   services: [
     {
-      title: "Portfolio and Editorial Systems",
+      title: "Visual systems",
       description:
-        "Image-led websites, MDX publishing flows, case-study architecture, and content models that stay easy to maintain."
+        "Image-led websites, MDX publishing flows, project archives, and content structures that can keep changing."
     },
     {
-      title: "AI Media Direction",
+      title: "AI tools",
       description:
-        "Prompt systems, visual research, mood development, and production-ready imagery for campaigns, essays, and concept worlds."
+        "Prompt systems, visual research, mood development, and production methods for images that need a point of view."
     },
     {
-      title: "Architecture Visualization",
+      title: "Architecture images",
       description:
-        "Quiet cinematic scenes, spatial narratives, and presentation surfaces for buildings, interiors, landscapes, and speculative environments."
+        "Quiet spatial scenes, image sequences, and presentation surfaces for buildings, interiors, landscapes, and speculative places."
     },
     {
-      title: "Water and Cultural Projects",
+      title: "Water projects",
       description:
-        "Digital storytelling for ecological work, public-interest initiatives, field notes, and research that needs both clarity and emotional force."
+        "Field notes, public-facing records, and visual structures for ecological work that needs clarity more than noise."
     }
   ]
 };
