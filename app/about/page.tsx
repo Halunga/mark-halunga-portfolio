@@ -22,12 +22,17 @@ export default function AboutPage() {
           <p>
             Mark Halunga works across front-end development, interface design, and digital
             publishing. The focus is practical: build sites that load quickly, navigate clearly, and
-            make the content feel considered rather than assembled from a template.
+            make the content feel considered rather than generic.
           </p>
           <p>
-            This page is ready for a more personal biography, location, client history, and current
-            availability. The structure is intentionally direct so the work and writing stay in
-            front.
+            I work best on projects where the content matters: portfolios, small-business sites,
+            editorial pages, landing pages, and redesigns that need sharper structure. I care about
+            the parts users notice immediately and the parts that make the site easier to maintain
+            six months later.
+          </p>
+          <p>
+            The stack is deliberately modern and simple: Next.js, React, TypeScript, Tailwind, MDX,
+            semantic HTML, responsive navigation, SEO metadata, and accessible interaction states.
           </p>
           <h2>Capabilities</h2>
           <ul>

@@ -11,11 +11,11 @@ export const metadata: Metadata = {
     template: "%s | Mark Halunga"
   },
   description:
-    "A dark editorial portfolio and journal for Mark Halunga, featuring selected projects, essays, and contact details.",
+    "Mark Halunga builds fast, polished websites, portfolio systems, and editorial front ends with Next.js, TypeScript, Tailwind, and MDX.",
   openGraph: {
     title: "Mark Halunga | Portfolio and Journal",
     description:
-      "Selected work and writing from Mark Halunga across design, strategy, and digital publishing.",
+      "Fast websites, portfolio systems, and editorial front ends by Mark Halunga.",
     url: "https://halunga.github.io/mark-halunga-portfolio",
     siteName: "Mark Halunga",
     images: [{ url: "/images/og-mark-halunga.svg", width: 1200, height: 630 }],

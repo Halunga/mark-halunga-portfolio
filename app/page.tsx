@@ -20,7 +20,7 @@ export default async function HomePage() {
             </h1>
             <p className="mx-auto mt-7 max-w-3xl text-center text-xl leading-8 text-steel md:mx-0 md:text-left">
               I build fast Next.js websites, portfolio systems, and editorial interfaces that are
-              easy to navigate, easy to update, and hard to confuse with a template.
+              easy to navigate, easy to update, and designed around the work itself.
             </p>
             <div className="mx-auto mt-8 grid max-w-md grid-cols-2 border border-white/15 text-center text-sm uppercase text-steel md:mx-0">
               <Link href="/projects" className="border-r border-white/15 p-5 hover:bg-ink hover:text-coal">
@@ -47,7 +47,7 @@ export default async function HomePage() {
             <div className="absolute bottom-5 left-5 right-5 flex items-end justify-between gap-4">
               <p className="text-xs font-black uppercase text-ink">Selected interface system</p>
               <p className="hidden max-w-[18rem] text-right text-xs leading-5 text-ink/80 sm:block">
-                A visual placeholder for front-end work, replaceable with real screenshots.
+                Designed for real screenshots, case studies, and client-facing evidence.
               </p>
             </div>
           </div>
@@ -72,7 +72,7 @@ export default async function HomePage() {
           <div className="mx-auto max-w-4xl text-center">
             <p className="text-xs font-black uppercase">Next.js portfolio systems</p>
             <h2 className="mt-5 font-serif text-[clamp(3.4rem,10vw,9rem)] font-medium leading-[0.82]">
-              Built to show the work, not the template.
+              Built to show the work, not the framework.
             </h2>
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-coal/70">
               Project grids, case-study pages, MDX writing, metadata, responsive navigation, and a
@@ -80,7 +80,7 @@ export default async function HomePage() {
             </p>
             <div className="mt-7 flex justify-center gap-5 text-sm font-bold">
               <Link href="/projects" className="text-rust">
-                View examples
+                View work
               </Link>
               <Link href="/contact" className="text-rust">
                 Build one
