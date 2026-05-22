@@ -9,15 +9,19 @@ export function KarmaHome() {
     <div className="min-h-screen bg-[#171717] text-white">
       <section className="mx-auto w-full max-w-[1200px] px-5 pb-12 pt-8 md:pb-16">
         <div className="mx-auto max-w-[760px] pb-8 pt-2 text-center md:pb-10">
-          <p className="mb-5 text-[15px] text-white/45">{karmaIntro.section}</p>
+          {karmaIntro.section ? (
+            <p className="mb-5 text-[15px] text-white/45">{karmaIntro.section}</p>
+          ) : null}
           <h1 className="text-[42px] font-light leading-[1.03] tracking-[-0.04em] md:text-[64px]">
             {karmaIntro.title}
             <br />
             <span className="font-black text-[#72b844]">{karmaIntro.accent}</span>
           </h1>
-          <p className="mx-auto mt-5 max-w-[620px] text-[17px] leading-7 text-white/58">
-            {karmaIntro.description}
-          </p>
+          {karmaIntro.description ? (
+            <p className="mx-auto mt-5 max-w-[620px] text-[17px] leading-7 text-white/58">
+              {karmaIntro.description}
+            </p>
+          ) : null}
         </div>
 
         <div className="grid gap-4 md:grid-cols-3 md:gap-6">

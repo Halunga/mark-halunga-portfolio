@@ -8,11 +8,10 @@ export type KarmaCard = {
 };
 
 export const karmaIntro = {
-  section: "Archive",
-  title: "A visual index for",
-  accent: "CARBON 12",
-  description:
-    "A personal collection of visual work, film and motion, environments, notes, process material, and selected records."
+  section: "",
+  title: "Carbon 12 Visually Creative",
+  accent: "Creative Visionary",
+  description: ""
 };
 
 export const karmaCards: KarmaCard[] = [
