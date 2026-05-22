@@ -44,6 +44,8 @@ export function Header() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
 
+  if (pathname.startsWith("/blog")) return null;
+
   return (
     <header className="sticky top-0 z-50 bg-[#171717]/90 px-5 py-5 text-white backdrop-blur">
       <nav className="mx-auto flex max-w-[1200px] items-center gap-5" aria-label="Main navigation">
