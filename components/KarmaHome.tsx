@@ -15,6 +15,8 @@ export function KarmaHome() {
           <h1 className="text-[42px] font-light leading-[1.03] tracking-[-0.04em] md:text-[64px]">
             {karmaIntro.title}
             <br />
+            {karmaIntro.kicker}
+            <br />
             <span className="font-black text-[#72b844]">{karmaIntro.accent}</span>
           </h1>
           {karmaIntro.description ? (

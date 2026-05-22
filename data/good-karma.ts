@@ -9,7 +9,8 @@ export type KarmaCard = {
 
 export const karmaIntro = {
   section: "",
-  title: "Carbon 12 Visually Creative",
+  title: "CARBON12",
+  kicker: "Visually Creative",
   accent: "Creative Visionary",
   description: ""
 };

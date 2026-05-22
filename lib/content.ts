@@ -26,6 +26,7 @@ export type PostMeta = {
   category: string;
   readingTime: string;
   href: string;
+  author?: string;
 };
 
 type ProjectModule = {
@@ -46,6 +47,8 @@ const projectImports = {
 } satisfies Record<string, () => Promise<ProjectModule>>;
 
 const blogImports = {
+  "inside-the-carbon-12-visual-factory": () =>
+    import("@/content/blog/inside-the-carbon-12-visual-factory.mdx"),
   "strict-grids": () => import("@/content/blog/strict-grids.mdx"),
   "dark-editorial-systems": () => import("@/content/blog/dark-editorial-systems.mdx")
 } satisfies Record<string, () => Promise<BlogModule>>;
